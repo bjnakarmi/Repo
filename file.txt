@@ -1,1 +1,2 @@
 Hello git
+This is a new line in feature-branch
