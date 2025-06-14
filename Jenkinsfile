@@ -9,7 +9,7 @@ pipeline{
 		}
 		stage('Run Tests'){
 			steps{
-				bat 'pytest tests/ --html=report.html --self-contained-html'
+				bat 'pytest tests/ -s -v --html=report.html --self-contained-html'
 			}
 		}
 		stage('Publish Report'){
