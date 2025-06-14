@@ -7,12 +7,6 @@ pipeline{
 				git 'https://github.com/bjnakarmi/Repo.git'
 			}
 		}
-		stage('Install Dependencies'){
-			steps{
-				bat 'python -m pip install --upgrade pip'
-				bat 'python -m pip install selenium pytest pytest-html webdriver-manager'
-			}
-		}
 		stage('Run Tests'){
 			steps{
 				bat 'pytest tests/ --html=report.html --self-contained-html'
