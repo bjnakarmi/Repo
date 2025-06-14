@@ -18,7 +18,7 @@ pipeline{
 					reportDir: '.',
 					reportFiles: 'report.html',
 					reportName: 'Test Report',
-					keepAll: True
+					keepAll: true
 					])
 			}
 		}
