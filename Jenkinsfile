@@ -15,6 +15,8 @@ pipeline{
 		stage('Publish Report'){
 			steps{
 				publishHTML([
+					allowMissing: false,
+    					alwaysLinkToLastBuild: true,
 					reportDir: '.',
 					reportFiles: 'report.html',
 					reportName: 'Test Report',
